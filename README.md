@@ -49,3 +49,29 @@ java -cp "target/assessment-0.0.1-SNAPSHOT.jar:target/lib/*" com.techeazy.AppRun
 Verify whether the application is running with the following REST endpoint:
 
 curl http://localhost:8080/app/ping
+
+###### API Endpoints
+
+### Create a Student
+
+Endpoint URL: http://localhost:8080/student/createStudent
+Method Type: POST
+Sample Input JSON: {"studentName":"Tanish" , "studentAddress":"Indore"}
+
+### Create a Subject
+Endpoint URL: http://localhost:8080/subject/createSubject
+Method Type: POST
+Sample Input JSON: {"subjectName":"Science" , "subjectCode":"S1"}
+
+### Get All Subjects
+Endpoint URL: http://localhost:8080/subject/getAllSubjects
+Method Type: GET
+
+### Get All Students
+Endpoint URL: http://localhost:8080/student/getAllStudents
+Method Type: GET
+
+### Enroll a Subject
+Endpoint URL: http://localhost:8080/student/enroll
+Method Type: POST
+Sample Input JSON: {"studentId":1 , "subjectId":1}
